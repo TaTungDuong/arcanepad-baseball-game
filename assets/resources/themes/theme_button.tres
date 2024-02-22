@@ -1,0 +1,33 @@
+[gd_resource type="Theme" load_steps=4 format=2]
+
+[ext_resource path="res://assets/resources/Button.tres" type="DynamicFont" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0.529412, 0.615686, 1 )
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color( 0, 1, 1, 1 )
+
+[resource]
+Button/colors/font_color = Color( 0, 1, 1, 1 )
+Button/colors/font_color_disabled = Color( 0, 1, 1, 1 )
+Button/colors/font_color_focus = Color( 0, 1, 1, 1 )
+Button/colors/font_color_hover = Color( 0, 1, 1, 1 )
+Button/colors/font_color_pressed = Color( 0, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = ExtResource( 1 )
+Button/styles/disabled = SubResource( 2 )
+Button/styles/focus = SubResource( 2 )
+Button/styles/hover = SubResource( 2 )
+Button/styles/normal = SubResource( 2 )
+Button/styles/pressed = SubResource( 3 )

@@ -1,0 +1,231 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scenes/View/Ball/Ball_RB.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/View/UI/Distance.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/View/UI/Point.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/View/UI/Score.tscn" type="PackedScene" id=4]
+
+[sub_resource type="PhysicsMaterial" id=5]
+friction = 0.1
+bounce = 1.0
+
+[sub_resource type="SphereShape" id=3]
+margin = 0.05
+radius = 0.15
+
+[sub_resource type="SphereMesh" id=2]
+radius = 0.5
+height = 1.0
+
+[sub_resource type="SpatialMaterial" id=6]
+flags_unshaded = true
+
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Distance:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -256 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Point/Zero:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Point/Minus:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Point/Bonus:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Point/Bonus:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 464, 184 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Point/Minus:rect_position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 464, 184 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Point/Zero:rect_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 464, 184 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "show"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Distance:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.5, 4.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -256 ), Vector2( 0, -256 ), Vector2( 0, 96 ), Vector2( 0, 96 ), Vector2( 0, -256 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Point/Bonus:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 464, 184 ), Vector2( 464, 184 ), Vector2( 120, 104 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Point/Minus:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 464, 184 ), Vector2( 464, 184 ), Vector2( 120, 104 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Point/Zero:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 464, 184 ), Vector2( 464, 184 ), Vector2( 120, 104 ) ]
+}
+tracks/4/type = "method"
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1, 2, 3.5, 3.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "get_audio_stream"
+}, {
+"args": [  ],
+"method": "get_point_text"
+}, {
+"args": [  ],
+"method": "clear_point_text"
+}, {
+"args": [  ],
+"method": "update_score_text"
+} ]
+}
+tracks/5/type = "method"
+tracks/5/path = NodePath("AudioStreamPlayer")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
+
+[node name="Ball_RB" type="RigidBody" groups=["ball"]]
+mass = 10.0
+physics_material_override = SubResource( 5 )
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 3 )
+
+[node name="ball" type="MeshInstance" parent="."]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0 )
+mesh = SubResource( 2 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 6 )
+
+[node name="Distance" parent="." instance=ExtResource( 2 )]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+pause_mode = 2
+physics_interpolation_mode = 2
+autoplay = "RESET"
+anims/RESET = SubResource( 9 )
+anims/show = SubResource( 10 )
+
+[node name="Score" parent="." instance=ExtResource( 4 )]
+
+[node name="Point" parent="." instance=ExtResource( 3 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -15.0
+
+[connection signal="body_entered" from="." to="." method="_on_Ball_RB_body_entered"]

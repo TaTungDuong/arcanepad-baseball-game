@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pitcher.mp3-6e7752b9269869ae2ce6a6c444b5bc57.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/wav/pitcher.mp3"
+dest_files=[ "res://.import/pitcher.mp3-6e7752b9269869ae2ce6a6c444b5bc57.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

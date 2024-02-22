@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/homerun.mp3-f3215f93ed91bd8bb37fc4d3a0c6dad6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/wav/homerun.mp3"
+dest_files=[ "res://.import/homerun.mp3-f3215f93ed91bd8bb37fc4d3a0c6dad6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

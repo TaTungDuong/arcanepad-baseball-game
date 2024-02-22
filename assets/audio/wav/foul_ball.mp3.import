@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/foul_ball.mp3-116303842605254a46663045c30e3711.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/wav/foul_ball.mp3"
+dest_files=[ "res://.import/foul_ball.mp3-116303842605254a46663045c30e3711.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

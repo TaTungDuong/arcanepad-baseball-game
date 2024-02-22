@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://assets/resources/fonts/schrodinger.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+font_data = SubResource( 11 )
+
+[node name="Point" type="Node2D"]
+
+[node name="Bonus" type="Label" parent="."]
+margin_left = 464.0
+margin_top = 184.0
+margin_right = 560.0
+margin_bottom = 232.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0, 1, 0.298039, 1 )
+custom_fonts/font = SubResource( 8 )
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Minus" type="Label" parent="."]
+margin_left = 464.0
+margin_top = 184.0
+margin_right = 560.0
+margin_bottom = 232.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Zero" type="Label" parent="."]
+margin_left = 464.0
+margin_top = 184.0
+margin_right = 560.0
+margin_bottom = 232.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 8 )
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_editor_description_": ""
+}

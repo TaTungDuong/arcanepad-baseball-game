@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/homerun_cheer.mp3-ce5c0b25744e0c98a5c5866045df5c42.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/wav/homerun_cheer.mp3"
+dest_files=[ "res://.import/homerun_cheer.mp3-ce5c0b25744e0c98a5c5866045df5c42.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
